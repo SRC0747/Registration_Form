@@ -61,6 +61,14 @@ public class RegistrationForm {
         Pattern p = Pattern.compile("\\b[A-Z0-9._%-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}\\b");
         Matcher m = p.matcher("foobar@gmail.com");
     }
+    
+    //Checking the valid 10-digit mobile number.
+    @Test
+    public boolean whenMatchesTenDigitsNumber_thenCorrect() {
+        Pattern pattern = Pattern.compile("^\\d{10}$");
+        Matcher matcher = pattern.matcher("2055550125");
+        assertTrue(matcher.matches());
+    }
     public static void main(String[] args)
     {
         // Test Case: 1
@@ -91,5 +99,8 @@ public class RegistrationForm {
         //Checking Email-id.
         String email = "sampritirc@gmail.com";
         System.out.println(isValidEmail(email));
+        
+         //Checking Valid Mobile Number.
+        System.out.println(whenMatchesTenDigitsNumber_thenCorrect());
     }
 }
