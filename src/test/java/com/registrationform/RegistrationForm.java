@@ -78,15 +78,15 @@ public class RegistrationForm {
         //Checking the last username.
         // Test Case: 1
         String str1 = "Kolkata22";
-        System.out.println(isValidFirstUsername(str1));
+        System.out.println(isValidSecondUsername(str1));
 
         // Test Case: 2
         String str2 = "Cap36MkS";
-        System.out.println(isValidFirstUsername(str2));
+        System.out.println(isValidSecondUsername(str2));
 
         // Test Case: 3
         String str3 = "CapRiya526Biny";
-        System.out.println(isValidFirstUsername(str3));
+        System.out.println(isValidSecondUsername(str3));
 
         //Checking Email-id.
         String email = "sampritirc@gmail.com";
