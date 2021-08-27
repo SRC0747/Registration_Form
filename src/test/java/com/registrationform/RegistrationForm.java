@@ -66,7 +66,7 @@ public class RegistrationForm {
     @Test
     public boolean whenMatchesTenDigitsNumber_thenCorrect() {
         Pattern pattern = Pattern.compile("^\\d{10}$");
-        Matcher matcher = pattern.matcher("2055550125");
+        Matcher matcher = pattern.matcher("91 7523654895");
         assertTrue(matcher.matches());
     }
     public static void main(String[] args)
