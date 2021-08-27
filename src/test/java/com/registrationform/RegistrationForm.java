@@ -123,8 +123,8 @@ public class RegistrationForm {
         //Checking at least 1 Numeric Digit in Password.
         String password_numericdigit = "Sampriti0747July";
         System.out.println(isValidPassword(password_numericdigit));
-
-        //Checking at least 1 Special Character in Password.
+        
+         //Checking at least 1 Special Character in Password.
         String password_Spceial_char = "Sampriti07@47$July";
         System.out.println(isValidPassword(password_Spceial_char));
     }
